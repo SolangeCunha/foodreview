@@ -2,6 +2,9 @@ import express from 'express';
 
 const login = express.Router();
 
-login.get('/', (req,res) => res.send("Rota de Login"));
+login.post('/', async (req,res) => {
+
+
+});
 
 export default login;

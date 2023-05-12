@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import Logo from '../assets/images/img.jpg';
 import CustomInput from "../components/CustomInput";
 import CustomButton from "../components/CustomButton";
+import api from "../api";
 const Login = ({ navigation }) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');

@@ -3,8 +3,8 @@ import {
 } from "react-native";
 import React, { useState } from 'react';
 import Logo from '../assets/images/img.jpg';
-import CustomInput from "../components/CustomInput";
-import CustomButton from "../components/CustomButton";
+import CustomInput from "../components/CustomInput.js";
+import CustomButton from "../components/CustomButton.js";
 import api from "../api";
 
 const RegisterUser = ({ navigation }) => {
@@ -21,7 +21,7 @@ const RegisterUser = ({ navigation }) => {
                 name: name,
                 email: email,
                 password: password,
-                admin: admin
+                admin: admin,
 
             });
             if(data.status === 200){
